@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import ListAllProducts from './components/Products/ListAllProducts'
+import { NavLink } from 'react-router-dom';
 
 
 function App() {
@@ -20,7 +21,9 @@ function App() {
   }, [])
   return (
     <>
-
+    <NavLink to="/Post">
+      <button className="bg-blue-700 my-10 hover:bg-orange-500 text-white font-semibold text-center text-xl p-2 rounded-xl border-white border-2">Add New Product</button>
+    </NavLink>
       <section className='grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-12 p-8 m-8'>
         {
           products?.map((pro) => (

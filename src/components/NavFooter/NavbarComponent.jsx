@@ -109,6 +109,7 @@ export default function NavbarComponent() {
           </div>
         </div>
       </nav>
+      
     )
 
   }

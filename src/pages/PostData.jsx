@@ -1,5 +1,7 @@
 import { useState } from "react";
-
+import ReactDOM from 'react-dom/client'
+import { NavLink } from 'react-router-dom';
+import { Link } from "react-router-dom";
 const AddProduct = ({ onAdd }) => {
   const [formData, setFormData] = useState({
     title: "",
@@ -40,6 +42,13 @@ const AddProduct = ({ onAdd }) => {
   };
 
   return (
+    <>
+        {/* <Navlink to="">
+            <button className="bg-red-500 p-3 my-10 text-white text-2xl rounded-2xl">Back to Product</button>
+        </Navlink> */}
+        <Link to={"/App"}>
+            <button className="bg-red-500 p-3 my-10 text-white text-2xl rounded-2xl">Back to Product</button>
+        </Link>
     <form
       onSubmit={handleSubmit}
       className="bg-white p-6 rounded-xl shadow-md max-w-md mx-auto my-8 space-y-3"
@@ -83,6 +92,7 @@ const AddProduct = ({ onAdd }) => {
         Submit
       </button>
     </form>
+    </>
   );
 };
 

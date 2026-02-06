@@ -98,8 +98,7 @@ export default function ListAllProducts({
                     {/* Pricing */}
                     <div className="flex items-end justify-between">
                         <div className="flex items-baseline space-x-2 mt-2">
-                            <span className="text-blue-600 text-xl font-semibold">$806.33</span>
-                            <span className="text-gray-400 text-sm line-through">${price}</span>
+                            <span className="text-blue-600 text-xl font-semibold">${price}</span>
                         </div>
 
                     </div>
